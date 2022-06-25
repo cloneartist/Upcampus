@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:upcampus/models/textstyle.dart';
+import 'package:upcampus/screens/home.dart';
 import 'package:upcampus/screens/login.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -104,10 +105,10 @@ class _SignUpState extends State<SignUp> {
                         User? user = res.user;
                         user!.updateDisplayName(name);
 
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => const Homescreen()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Homescreen()));
                       } on FirebaseAuthException catch (e) {
                         String error = e.message.toString();
 
