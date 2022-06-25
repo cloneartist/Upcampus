@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Up Campus',
       theme: ThemeData(
+        // useMaterial3: true,
         primarySwatch: Colors.blue,
       ),
       home: const Splash(),
