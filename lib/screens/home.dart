@@ -48,35 +48,29 @@ class _HomescreenState extends State<Homescreen> {
                   width: widthx * 0.9,
                   padding: const EdgeInsets.all(16.0),
                   decoration: BoxDecoration(
-                    border: Border.all(width: 2, color: Colors.black),
-                    borderRadius: BorderRadius.all(Radius.circular(50)),
-                    color: Color(0xFFD6FCF7)
-                  ),
-                  
-                  child: Column(
-                    children:[
-                      CircleAvatar(),
-                       const Text(
+                      border: Border.all(width: 2, color: Colors.black),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      color: Color(0xFFD6FCF7)),
+                  child: Column(children: [
+                    CircleAvatar(),
+                    const Text(
                       "\n\t\tWhy\n\t\t\t\t\t\t\t\t\tShould\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tYou\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCode?",
-                      style: TextStyle(fontSize: 34.0,fontWeight:FontWeight.bold),
-                    
-                    ),]
-                    
-                  ),
+                      style: TextStyle(
+                          fontSize: 34.0, fontWeight: FontWeight.bold),
+                    ),
+                  ]),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  
                   height: heightx * 0.4,
                   width: widthx * 0.9,
                   padding: const EdgeInsets.all(16.0),
                   decoration: BoxDecoration(
-                    border: Border.all(width: 2, color: Colors.black),
-                    borderRadius: BorderRadius.all(Radius.circular(50)),
-                    color: Color.fromARGB(255, 253, 208, 227)
-                  ),
+                      border: Border.all(width: 2, color: Colors.black),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                      color: Color.fromARGB(255, 253, 208, 227)),
                   child: const Text(
                     "G",
                     style: TextStyle(fontSize: 34.0),
@@ -86,39 +80,7 @@ class _HomescreenState extends State<Homescreen> {
             ],
           ),
         ),
-        bottomNavigationBar: tabbar(),
       ),
     );
   }
-}
-
-Widget tabbar() {
-  return Container(
-    color: Color(0xFF3F5AA6),
-    child: TabBar(
-      labelColor: Colors.white,
-      unselectedLabelColor: Colors.white70,
-      indicatorSize: TabBarIndicatorSize.tab,
-      indicatorPadding: EdgeInsets.all(5.0),
-      indicatorColor: Colors.blue,
-      tabs: [
-        Tab(
-          text: "Transactions",
-          icon: Icon(Icons.euro_symbol),
-        ),
-        Tab(
-          text: "Bills",
-          icon: Icon(Icons.assignment),
-        ),
-        Tab(
-          text: "Balance",
-          icon: Icon(Icons.account_balance_wallet),
-        ),
-        Tab(
-          text: "Options",
-          icon: Icon(Icons.settings),
-        ),
-      ],
-    ),
-  );
 }

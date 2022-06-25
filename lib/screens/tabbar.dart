@@ -58,26 +58,27 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home_outlined),
             label: 'Home',
             backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.star_outline),
+            label: 'Level Zero',
             backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.square_outlined),
+            label: 'Level One',
             backgroundColor: Colors.purple,
           ),
           BottomNavigationBarItem(
-            icon: ImageIcon(
-              AssetImage("images/icon_more.png"),
-              color: Color(0xFF3A5A98),
-            ),
-            label: 'Settings',
+            icon: Icon(Icons.person_outlined),
+            // icon: ImageIcon(
+            //   AssetImage("assets/images/box.png"),
+            //   // color: Color(0xFF3A5A98),
+            // ),
+            label: 'Profile',
             backgroundColor: Colors.pink,
           ),
         ],
