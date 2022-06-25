@@ -73,7 +73,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             backgroundColor: Colors.purple,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: ImageIcon(
+              AssetImage("images/icon_more.png"),
+              color: Color(0xFF3A5A98),
+            ),
             label: 'Settings',
             backgroundColor: Colors.pink,
           ),
