@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upcampus/screens/home.dart';
 import 'package:upcampus/screens/one.dart';
+import 'package:upcampus/screens/token.dart';
 import 'package:upcampus/screens/two.dart';
 
 class navs extends StatelessWidget {
@@ -31,7 +32,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const List<Widget> _widgetOptions = <Widget>[
     Homescreen(),
     one(),
-    two(),
+    Tokenp(),
     Text(
       ' Settings',
       style: optionStyle,

@@ -114,29 +114,6 @@ class _TokenpState extends State<Tokenp> {
                                 ),
                               ),
                             }),
-
-                        // if (formKey.currentState!.validate()) {
-                        //   setState(() {});
-                        //   try {
-                        //     user = await auth.signInWithEmailAndPassword(
-                        //         email: email, password: password);
-
-                        //     // await signin(context);
-                        //     Navigator.push(
-                        //         context,
-                        //         MaterialPageRoute(
-                        //             builder: (context) => const Homescreen()));
-                        //   } on FirebaseAuthException catch (e) {
-                        //     String error = e.message.toString();
-                        //     final loginerror = SnackBar(content: Text(error));
-                        //     ScaffoldMessenger.of(context).showSnackBar(loginerror);
-                        //     Navigator.push(
-                        //         context,
-                        //         MaterialPageRoute(
-                        //             builder: (context) => const SignUp()));
-                        //   }
-                        // }
-
                         label: const Text(
                           "Unlock",
                           style: TextStyle(color: Colors.white, fontSize: 18),
