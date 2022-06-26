@@ -1,6 +1,10 @@
-# upcampus
+# Up Campus
 
-A new Flutter project.
+We are not changing how you learn, We are changing what you learn
+
+
+
+
 
 ## Getting Started
 
