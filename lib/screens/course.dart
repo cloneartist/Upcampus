@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:upcampus/screens/guideline.dart';
 import 'package:upcampus/screens/leveloneproject.dart';
+import 'package:upcampus/screens/weekprogramone.dart';
+import 'package:upcampus/screens/weekprogramthree.dart';
+import 'package:upcampus/screens/weekprogramtwo.dart';
 
 class course extends StatefulWidget {
   const course({Key? key}) : super(key: key);
@@ -37,14 +40,44 @@ class _courseState extends State<course> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LeveloneProject(),
+                          builder: (context) => Guideline(),
                         ),
                       ),
                     }),
               ),
-              box("Last Updated 25-06-2022", "Week 1"),
-              box("Last Updated 25-06-2022", "Week 2"),
-              box("Last Updated 25-06-2022", "Week 3"),
+              GestureDetector(
+                child: box("Last Updated 25-06-2022", "Week 1"),
+                onTap: (() => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Weekone(),
+                        ),
+                      ),
+                    }),
+              ),
+              GestureDetector(
+                child: box("Last Updated 25-06-2022", "Week 2"),
+                onTap: (() => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => WeekTwo(),
+                        ),
+                      ),
+                    }),
+              ),
+              GestureDetector(
+                child: box("Last Updated 25-06-2022", "Week 3"),
+                onTap: (() => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => WeekThree(),
+                        ),
+                      ),
+                    }),
+              ),
               box("Last Updated 25-06-2022", "Week 4"),
               box("Last Updated 25-06-2022", "Week 5"),
               box("Last Updated 25-06-2022", "Week 6"),

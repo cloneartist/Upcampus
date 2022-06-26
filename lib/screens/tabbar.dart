@@ -54,29 +54,29 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
+            icon: Icon(Icons.home),
             label: 'Home',
             backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.star_outline),
-            label: 'Level Zero',
+            icon: Icon(Icons.book_rounded),
+            label: 'Courses',
             backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.square_outlined),
+            icon: Icon(Icons.leaderboard),
             label: 'Level One',
             backgroundColor: Colors.purple,
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outlined),
-            // icon: ImageIcon(
-            //   AssetImage("assets/images/box.png"),
-            //   // color: Color(0xFF3A5A98),
-            // ),
-            label: 'Profile',
-            backgroundColor: Colors.pink,
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.person_outlined),
+          //   // icon: ImageIcon(
+          //   //   AssetImage("assets/images/box.png"),
+          //   //   // color: Color(0xFF3A5A98),
+          //   // ),
+          //   label: 'Profile',
+          //   backgroundColor: Colors.pink,
+          // ),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
