@@ -38,16 +38,6 @@ class _LeveloneProjectState extends State<LeveloneProject> {
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                     primary: Color(0xFF1947E6),
-                    // backgroundColor: ,
-                    // minimumSize: MaterialStateProperty.all<Size?>(
-                    //     Size(double.infinity, 50)),
-                    // shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    //   RoundedRectangleBorder(
-                    //     borderRadius: BorderRadius.circular(18.0),
-
-                    //     // side: BorderSide(color: Colors.red),
-                    //   ),
-                    // ),
                     minimumSize: Size(double.infinity, 50),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18))),

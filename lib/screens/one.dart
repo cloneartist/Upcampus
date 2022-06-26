@@ -56,46 +56,49 @@ class box extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Container(
-            height: heightx * 0.15,
-            width: widthx * 0.9,
-            padding: const EdgeInsets.all(16.0),
-            decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black,
-                    spreadRadius: 0,
-                    blurRadius: 0,
-                    offset: const Offset(0, 5),
-                  )
-                ],
-                border: Border.all(width: 2, color: Colors.black),
-                borderRadius: BorderRadius.all(Radius.circular(15)),
-                color: Color(0xFFD6FCF7)),
-            child: Column(children: [
-              Flexible(
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text("$posted",
-                      //   style: TextStyle(
-                      //       fontSize: 10.0, fontWeight: FontWeight.bold),
-                      // ),
-                      style: GoogleFonts.poppins(fontWeight: FontWeight.w600)),
+          child: Flexible(
+            child: Container(
+              height: heightx * 0.15,
+              width: widthx * 0.9,
+              padding: const EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black,
+                      spreadRadius: 0,
+                      blurRadius: 0,
+                      offset: const Offset(0, 5),
+                    )
+                  ],
+                  border: Border.all(width: 2, color: Colors.black),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  color: Color(0xFFD6FCF7)),
+              child: Column(children: [
+                Flexible(
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text("$posted",
+                        //   style: TextStyle(
+                        //       fontSize: 10.0, fontWeight: FontWeight.bold),
+                        // ),
+                        style:
+                            GoogleFonts.poppins(fontWeight: FontWeight.w600)),
+                  ),
                 ),
-              ),
-              Flexible(
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text("$title",
-                      textAlign: TextAlign.left,
-                      //   style: TextStyle(
-                      //       fontSize: 10.0, fontWeight: FontWeight.bold),
-                      // ),
-                      style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.bold, fontSize: 20)),
+                Flexible(
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text("$title",
+                        textAlign: TextAlign.left,
+                        //   style: TextStyle(
+                        //       fontSize: 10.0, fontWeight: FontWeight.bold),
+                        // ),
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.bold, fontSize: 20)),
+                  ),
                 ),
-              ),
-            ]),
+              ]),
+            ),
           ),
         ),
       ],
