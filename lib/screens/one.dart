@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:upcampus/screens/two.dart';
 
 class one extends StatefulWidget {
   const one({Key? key}) : super(key: key);
@@ -29,7 +30,17 @@ class _oneState extends State<one> {
                   ),
                 ),
               ),
-              box("Last Updated 25-06-2022", "Coding"),
+              GestureDetector(
+                child: box("Last Updated 25-06-2022", "Coding"),
+                onTap: (() => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => two(),
+                        ),
+                      ),
+                    }),
+              ),
               box("Coming Soon!", "Something Exiting is brewing"),
               box("Coming Soon!", "Something Exiting is brewing"),
 
