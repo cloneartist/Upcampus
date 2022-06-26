@@ -44,25 +44,20 @@ class _HomescreenState extends State<Homescreen> {
               Container(
                 child: Image.asset(
                   'assets/images/box.png',
+                  
                 ),
               ),
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                child: Image.asset(
+                  'assets/images/Blog.png',
+                  
+                )
+              ),
 
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: heightx * 0.4,
-                  width: widthx * 0.9,
-                  padding: const EdgeInsets.all(16.0),
-                  decoration: BoxDecoration(
-                      border: Border.all(width: 2, color: Colors.black),
-                      borderRadius: BorderRadius.all(Radius.circular(50)),
-                      color: Color.fromARGB(255, 253, 208, 227)),
-                  child: const Text(
-                    "G",
-                    style: TextStyle(fontSize: 34.0),
-                  ),
-                ),
-              )
+              
             ],
           ),
         ),
