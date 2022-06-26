@@ -37,17 +37,15 @@ class _SignUpState extends State<SignUp> {
               key: formKey,
               child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(22.0, 60, 22, 22),
-                    child: Container(
-                      width: 60,
-                      height: 60,
-                      child: Image.asset(
-                        'assets/images/new.png',
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.all(22.0),
+                  //   child: Container(
+                  //     child: Image.asset(
+                  //       'assets/images/new.png',
+                  //       fit: BoxFit.contain,
+                  //     ),
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: 10,
                   ),
