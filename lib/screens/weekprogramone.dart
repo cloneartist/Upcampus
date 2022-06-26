@@ -31,22 +31,7 @@ class _WeekoneState extends State<Weekone> {
                   ),
                 ),
               ),
-              // GestureDetector(
-              //     onTap: (() => {
-              //           Navigator.push(
-              //             context,
-              //             MaterialPageRoute(
-              //               builder: (context) => course(),
-              //             ),
-              //           ),
-              //         }),
-              //     child: box("Last Updated 25-06-2022", "Level Zero")),
-              // box("Last Updated 25-06-2022", "Level One"),
               box("28 March 2022", "Week 1:\n First Program"),
-              // // box("Coming Soon!", "Something Exiting is brewing"),
-              // // box("Coming Soon!", "Something Exiting is brewing"),
-              // // box("Coming Soon!", "Something Exiting is brewing"),
-              // // box(),
               Padding(
                 padding: const EdgeInsets.all(22.0),
                 child: Container(
@@ -105,36 +90,17 @@ class box extends StatelessWidget {
             height: heightx * 0.16,
             width: widthx * 0.9,
             padding: const EdgeInsets.all(16.0),
-            // decoration: BoxDecoration(
-            //     boxShadow: [
-            //       BoxShadow(
-            //         color: Colors.black,
-            //         spreadRadius: 0,
-            //         blurRadius: 0,
-            //         offset: const Offset(0, 5),
-            //       )
-            //     ],
-            //     border: Border.all(width: 2, color: Colors.black),
-            //     borderRadius: BorderRadius.all(Radius.circular(15)),
-            //     color: Color(0xFFD6FCF7)),
             child: Column(children: [
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text("$title",
                     textAlign: TextAlign.left,
-                    //   style: TextStyle(
-                    //       fontSize: 10.0, fontWeight: FontWeight.bold),
-                    // ),
                     style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold, fontSize: 20)),
               ),
               Align(
                 alignment: Alignment.centerLeft,
-                child: Text("$posted",
-                    //   style: TextStyle(
-                    //       fontSize: 10.0, fontWeight: FontWeight.bold),
-                    // ),
-                    style: GoogleFonts.poppins()),
+                child: Text("$posted", style: GoogleFonts.poppins()),
               ),
             ]),
           ),
