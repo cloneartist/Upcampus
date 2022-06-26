@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:upcampus/screens/guideline.dart';
-import 'package:upcampus/screens/leveloneproject.dart';
 
 class course extends StatefulWidget {
   const course({Key? key}) : super(key: key);
@@ -37,17 +36,14 @@ class _courseState extends State<course> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LeveloneProject(),
+                          builder: (context) => Guideline(),
                         ),
                       ),
                     }),
               ),
-              box("Last Updated 25-06-2022", "Week 1"),
-              box("Last Updated 25-06-2022", "Week 2"),
-              box("Last Updated 25-06-2022", "Week 3"),
-              box("Last Updated 25-06-2022", "Week 4"),
-              box("Last Updated 25-06-2022", "Week 5"),
-              box("Last Updated 25-06-2022", "Week 6"),
+              box("Last Updated 25-06-2022", "Project 1"),
+              box("Last Updated 25-06-2022", "Project 2"),
+
               // box("Coming Soon!", "Something Exiting is brewing"),
               // box("Coming Soon!", "Something Exiting is brewing"),
               // box("Coming Soon!", "Something Exiting is brewing"),
@@ -135,57 +131,3 @@ class box extends StatelessWidget {
     );
   }
 }
-
-// class AppCheckbox extends StatelessWidget {
-//   final bool value;
-//   final bool disabled;
-//   final double size;
-//   final ValueChanged<bool> onChanged;
-
-//   const AppCheckbox({
-//     Key? key,
-//     this.size = 24,
-//     this.value = false,
-//     this.disabled = false,
-//     required this.onChanged,
-//   }) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     final backColor = disabled ? Colors.white10 : Colors.white24;
-//     final checkColor = disabled ? Colors.white54 : Colors.white;
-
-//     return Theme(
-//       data: Theme.of(context).copyWith(
-//         disabledColor: Colors.transparent,
-//         unselectedWidgetColor: Colors.transparent,
-//       ),
-//       child: SizedBox(
-//         width: size,
-//         height: size,
-//         child: Container(
-//           decoration: BoxDecoration(
-//             color: backColor,
-//             borderRadius: BorderRadius.circular(4),
-//           ),
-//           clipBehavior: Clip.hardEdge,
-//           child: Transform.scale(
-//             scale: size / Checkbox.width,
-//             child: Checkbox(
-//               hoverColor: Colors.transparent,
-//               focusColor: Colors.transparent,
-//               activeColor: Colors.transparent,
-//               checkColor: checkColor,
-//               value: value,
-//               onChanged: disabled
-//                   ? null
-//                   : (value) {
-//                       onChanged(value!);
-//                     },
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
