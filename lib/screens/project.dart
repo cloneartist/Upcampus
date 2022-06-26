@@ -84,7 +84,7 @@ class box extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
-            height: heightx * 0.15,
+            height: heightx * 0.19,
             width: widthx * 0.9,
             padding: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
