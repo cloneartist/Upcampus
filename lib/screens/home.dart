@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:upcampus/screens/login.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -70,12 +71,22 @@ class _HomescreenState extends State<Homescreen> {
                 ],
               ),
 
-              Container(
-                height: heightx * 0.56,
-                width: widthx * 0.9,
-                child: Image.asset(
-                  'assets/images/box.png',
-                  fit: BoxFit.contain,
+              GestureDetector(
+                onTap: () async {
+                  String url = ("https://www.sitepoint.com/why-learn-to-code/");
+                  var urllaunchable = await canLaunchUrl(
+                      Uri.parse(url)); //canLaunch is from url_launcher package
+
+                  await launchUrl(Uri.parse(
+                      url)); //launch is from url_launcher package to launch URL
+                },
+                child: Container(
+                  height: heightx * 0.56,
+                  width: widthx * 0.9,
+                  child: Image.asset(
+                    'assets/images/box.png',
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
               SizedBox(

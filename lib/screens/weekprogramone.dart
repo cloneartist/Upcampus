@@ -32,13 +32,15 @@ class _WeekoneState extends State<Weekone> {
                 ),
               ),
               box("28 March 2022", "Week 1:\n First Program"),
-              Padding(
-                padding: const EdgeInsets.all(22.0),
-                child: Container(
-                  width: double.infinity,
-                  child: Image.asset(
-                    'assets/images/group.png',
-                    fit: BoxFit.contain,
+              GestureDetector(
+                child: Padding(
+                  padding: const EdgeInsets.all(22.0),
+                  child: Container(
+                    width: double.infinity,
+                    child: Image.asset(
+                      'assets/images/group.png',
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
               ),

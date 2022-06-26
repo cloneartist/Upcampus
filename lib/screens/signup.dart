@@ -46,12 +46,15 @@ class _SignUpState extends State<SignUp> {
                   //     ),
                   //   ),
                   // ),
-                  const SizedBox(
+                  SizedBox(
                     height: 10,
                   ),
-                  const Text(
-                    "Welcome To\n Upcampus",
-                    style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                  Flexible(
+                    child: Text(
+                      "Welcome To\n Upcampus",
+                      style:
+                          TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                    ),
                   ),
                   const Spacer(flex: 1),
                   TextFormField(
