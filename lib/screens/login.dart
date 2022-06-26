@@ -90,7 +90,7 @@ class _LoginState extends State<Login> {
                             email: email, password: password);
 
                         // await signin(context);
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const navs()));
