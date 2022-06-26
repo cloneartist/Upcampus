@@ -21,6 +21,8 @@ class _GuidelineState extends State<Guideline> {
                 fit: BoxFit.contain,
               ),
             ),
+            
+            
           ]),
         ),
       ),
