@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Guideline extends StatefulWidget {
   const Guideline({Key? key}) : super(key: key);
@@ -17,12 +18,25 @@ class _GuidelineState extends State<Guideline> {
             Container(
               width: double.infinity,
               child: Image.asset(
-                'assets/images/people.png',
+                'assets/images/peole.png',
                 fit: BoxFit.contain,
               ),
             ),
-            
-            
+            Padding(
+              padding: const EdgeInsets.fromLTRB(15, 8, 15, 8),
+              child: ElevatedButton(
+                child: Text(
+                  "Start Learning",
+                  style: GoogleFonts.poppins(fontStyle: FontStyle.normal),
+                ),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    primary: Color(0xFF1947E6),
+                    minimumSize: Size(double.infinity, 50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18))),
+              ),
+            ),
           ]),
         ),
       ),

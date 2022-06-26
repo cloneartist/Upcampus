@@ -40,7 +40,7 @@ class _courseState extends State<course> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Guideline(),
+                          builder: (context) => LeveloneProject(),
                         ),
                       ),
                     }),
