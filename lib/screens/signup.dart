@@ -6,6 +6,7 @@ import 'package:upcampus/screens/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:upcampus/screens/tabbar.dart';
 
 FirebaseFirestore firestore = FirebaseFirestore.instance;
 FirebaseAuth auth = FirebaseAuth.instance;
@@ -105,10 +106,10 @@ class _SignUpState extends State<SignUp> {
                         User? user = res.user;
                         user!.updateDisplayName(name);
 
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const Homescreen()));
+                                builder: (context) => const navs()));
                       } on FirebaseAuthException catch (e) {
                         String error = e.message.toString();
 

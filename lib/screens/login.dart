@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:upcampus/models/textstyle.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:upcampus/screens/tabbar.dart';
 
 FirebaseFirestore firestore = FirebaseFirestore.instance;
 FirebaseAuth auth = FirebaseAuth.instance;
@@ -92,7 +93,7 @@ class _LoginState extends State<Login> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const Homescreen()));
+                                builder: (context) => const navs()));
                       } on FirebaseAuthException catch (e) {
                         String error = e.message.toString();
                         final loginerror = SnackBar(content: Text(error));
