@@ -24,6 +24,17 @@ class _ProjectCompletedState extends State<ProjectCompleted> {
                 fit: BoxFit.contain,
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(50, 5, 100, 10),
+              child: Text(
+                "\nA CLI app that can quiz your friends on how well they know you.\nUse nodeJS. Use repli.it to host your app.",
+                style: GoogleFonts.poppins(
+                  
+                  fontSize: 14,
+                ),)),
+
+
+
             Text(
               "data,",
               style: GoogleFonts.poppins(),
