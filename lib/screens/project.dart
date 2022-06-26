@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:upcampus/screens/completed.dart';
 import 'package:upcampus/screens/guideline.dart';
 import 'package:upcampus/screens/leveloneproject.dart';
 
@@ -42,7 +43,17 @@ class _coursetwoState extends State<coursetwo> {
                       ),
                     }),
               ),
-              box("Last Updated 25-06-2022", "Project 1"),
+              GestureDetector(
+                child: box("Last Updated 25-06-2022", "Project 1"),
+                onTap: (() => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ProjectCompleted(),
+                        ),
+                      ),
+                    }),
+              ),
               box("Last Updated 25-06-2022", "Project 2"),
 
               // box("Coming Soon!", "Something Exiting is brewing"),
