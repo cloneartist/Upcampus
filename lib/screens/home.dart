@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:upcampus/screens/login.dart';
@@ -10,6 +12,13 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
+  Future<void> _signOut() async {
+    await FirebaseAuth.instance.signOut();
+  }
+
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+  FirebaseAuth auth = FirebaseAuth.instance;
+  final _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     var heightx = MediaQuery.of(context).size.height;
@@ -45,7 +54,8 @@ class _HomescreenState extends State<Homescreen> {
                         style: ElevatedButton.styleFrom(
                           primary: Colors.white,
                         ),
-                        onPressed: () {
+                        onPressed: () async {
+                          _signOut();
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
