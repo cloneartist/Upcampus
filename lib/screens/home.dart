@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:upcampus/screens/login.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -26,10 +27,10 @@ class _HomescreenState extends State<Homescreen> {
               //   style: TextStyle(),
               // )),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 8, 8, 8),
+                    padding: const EdgeInsets.fromLTRB(20, 8, 8, 8),
                     child: Text(
                       'Blogs',
                       style: GoogleFonts.poppins(
@@ -38,26 +39,45 @@ class _HomescreenState extends State<Homescreen> {
                           fontWeight: FontWeight.w700),
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(8.0, 15, 20, 8),
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.white,
+                        ),
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Login()));
+                          setState(() {});
+                        },
+                        child: const Text(
+                          "Logout",
+                          style: TextStyle(color: Colors.black),
+                        )),
+                  ),
                 ],
               ),
 
               Container(
+                height: heightx * 0.56,
+                width: widthx * 0.9,
                 child: Image.asset(
                   'assets/images/box.png',
-                  
+                  fit: BoxFit.contain,
                 ),
               ),
               SizedBox(
                 height: 30,
               ),
               Container(
-                child: Image.asset(
-                  'assets/images/Blog.png',
-                  
-                )
-              ),
-
-              
+                  height: heightx * 0.56,
+                  width: widthx * 0.9,
+                  child: Image.asset(
+                    'assets/images/Blog.png',
+                    fit: BoxFit.contain,
+                  )),
             ],
           ),
         ),

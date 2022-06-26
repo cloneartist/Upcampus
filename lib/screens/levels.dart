@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:upcampus/screens/course.dart';
+import 'package:upcampus/screens/token.dart';
 import 'package:upcampus/screens/weekprogramone.dart';
 import 'package:upcampus/screens/weekprogramthree.dart';
 import 'package:upcampus/screens/weekprogramtwo.dart';
@@ -43,7 +44,16 @@ class _levelsState extends State<levels> {
                         ),
                       }),
                   child: box("Last Updated 25-06-2022", "Level Zero")),
-              box("Last Updated 25-06-2022", "Level One"),
+              GestureDetector(
+                  onTap: (() => {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Tokenp(),
+                          ),
+                        ),
+                      }),
+                  child: box("Last Updated 25-06-2022", "Level One")),
             ],
           ),
         ),
