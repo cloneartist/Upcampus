@@ -48,7 +48,7 @@ class _SplashState extends State<Splash> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => navs(),
+          builder: (context) => SignUp(),
         ),
       ),
     );
@@ -61,13 +61,6 @@ class _SplashState extends State<Splash> {
         child: Container(
           height: 120.0,
           width: 120.0,
-          // decoration: const BoxDecoration(
-          //   image: DecorationImage(
-          //     image: AssetImage('assets/logo.png'),
-          //     fit: BoxFit.fill,
-          //   ),
-          //   shape: BoxShape.circle,
-          // ),
         ),
       ),
     );

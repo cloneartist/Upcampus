@@ -6,15 +6,15 @@ dynamic textInputDecoration = InputDecoration(
   ),
   fillColor: Colors.black,
   focusedBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(5),
+    borderRadius: BorderRadius.circular(25),
     borderSide: const BorderSide(width: 1, color: Colors.black),
   ),
   enabledBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(5),
+    borderRadius: BorderRadius.circular(25),
     borderSide: const BorderSide(width: 1, color: Colors.black),
   ),
   border: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(5),
+    borderRadius: BorderRadius.circular(25),
     borderSide: const BorderSide(),
   ),
 );
