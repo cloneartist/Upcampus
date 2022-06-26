@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:upcampus/screens/home.dart';
+import 'package:upcampus/screens/one.dart';
+import 'package:upcampus/screens/two.dart';
 
 class navs extends StatelessWidget {
   const navs({Key? key}) : super(key: key);
@@ -28,14 +30,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     Homescreen(),
-    Text(
-      ' Business',
-      style: optionStyle,
-    ),
-    Text(
-      ' School',
-      style: optionStyle,
-    ),
+    one(),
+    two(),
     Text(
       ' Settings',
       style: optionStyle,

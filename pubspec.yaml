@@ -39,6 +39,8 @@ dependencies:
   firebase_auth: ^3.3.8
   firebase_auth_platform_interface: ^6.1.11
   google_fonts: ^3.0.1
+  dependencies:
+  persistent_bottom_nav_bar: any
 
 dev_dependencies:
   flutter_test:

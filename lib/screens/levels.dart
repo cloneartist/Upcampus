@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:upcampus/screens/course.dart';
 
-class one extends StatefulWidget {
-  const one({Key? key}) : super(key: key);
+class levels extends StatefulWidget {
+  const levels({Key? key}) : super(key: key);
 
   @override
-  State<one> createState() => _oneState();
+  State<levels> createState() => _levelsState();
 }
 
-class _oneState extends State<one> {
+class _levelsState extends State<levels> {
   @override
   Widget build(BuildContext context) {
     var heightx = MediaQuery.of(context).size.height;
@@ -29,10 +30,21 @@ class _oneState extends State<one> {
                   ),
                 ),
               ),
-              box("Last Updated 25-06-2022", "Coding"),
-              box("Coming Soon!", "Something Exiting is brewing"),
-              box("Coming Soon!", "Something Exiting is brewing"),
-
+              GestureDetector(
+                  onTap: (() => {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => course(),
+                          ),
+                        ),
+                      }),
+                  child: box("Last Updated 25-06-2022", "Level Zero")),
+              box("Last Updated 25-06-2022", "Level One"),
+              // box("Coming Soon!", "Something Exiting is brewing"),
+              // box("Coming Soon!", "Something Exiting is brewing"),
+              // box("Coming Soon!", "Something Exiting is brewing"),
+              // box("Coming Soon!", "Something Exiting is brewing"),
               // box()
             ],
           ),
